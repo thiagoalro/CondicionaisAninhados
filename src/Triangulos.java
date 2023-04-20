@@ -22,19 +22,16 @@ public class Triangulos {
 		double lado3 = input.nextDouble();
 
 		if ( (lado1 < lado2 + lado3) && (lado2 < lado3 + lado1) && (lado3 < lado1 + lado2) ){
-			System.out.print("Os tamnhos digitados para os lados formam um triângulo!\n");
+			System.out.print("Os tamanhos digitados para os lados formam um triângulo!\n");
 
 			if (lado1 == lado2 && lado2 == lado3){
 				System.out.print("O triângulo é EQUILÁTERO!");
 			}
-			else {
-				if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+			else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
 					System.out.print("O triângulo é ISÓSCELES!");
-				}
-				else {
+			}
+			else {
 					System.out.print("O triângulo é ESCALENO!");
-				}
-
 			}
 		}
 		else {
