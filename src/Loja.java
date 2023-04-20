@@ -24,7 +24,7 @@ public class Loja {
 				"3 - 2x no cartão: preço original\n" +
 				"4 - 3x no cartão: juros de 5% do original\n");
 
-		System.out.print("Digite a opção de pagamento:\n");
+		System.out.print("Digite a opção de pagamento: ");
 		int opcao = input.nextInt();
 
 		double desconto, precoFinal;
